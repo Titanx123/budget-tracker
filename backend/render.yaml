@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: budget-tracker-backend
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn budgettracker.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DEBUG
+        value: False
