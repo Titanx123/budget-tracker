@@ -27,8 +27,11 @@ SECRET_KEY = 'django-insecure-y5%4nej!mjpsbq8ag+=rs5$@zu)my(3z5r=*bp6j+j(f6=^542
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = [
+    'budget-tracker-api-zfok.onrender.com', 
+    'localhost',
+    '127.0.0.1'
+]
 
 # Application definition
 
@@ -145,7 +148,7 @@ REST_FRAMEWORK = {
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "https://budget-tracker-livid-three.vercel.app",
 ]
 CORS_ALLOW_ALL_ORIGINS = True  # Temporary - will restrict later
 
