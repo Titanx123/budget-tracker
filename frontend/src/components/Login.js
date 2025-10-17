@@ -67,7 +67,7 @@ function Login({ onLogin }) {
         <div className="test-credentials">
           <p><strong>Test Credentials:</strong></p>
           <p>Username: testuser</p>
-          <p>Password: testpass123</p>
+          <p>Password: password</p>
         </div>
       </div>
     </div>

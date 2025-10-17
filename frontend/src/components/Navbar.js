@@ -26,9 +26,9 @@ function Navbar({ setIsLoggedIn }) {
       <NavLink to="/transactions" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="ml-4">
         Transactions
       </NavLink>
-      <NavLink to="/budgets" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="ml-4">
+      {/* <NavLink to="/budgets" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="ml-4">
         Budgets
-      </NavLink>
+      </NavLink> */}
       <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
         <span style={{ marginRight: 10 }}>Hello, {user?.username}</span>
         <button 

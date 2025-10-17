@@ -7,7 +7,7 @@ function Dashboard() {
   const [loading, setLoading] = useState(true);
   const chartRef = useRef();
   const pieChartRef = useRef();
-
+console.log(process.env.REACT_APP_BASE_URL)
 
   useEffect(() => {
     fetchDashboardSummary()
@@ -162,7 +162,7 @@ function Dashboard() {
   return (
     <div>
       <h1>Dashboard Summary</h1>
-      <div style={{ display: 'flex', gap: '20px' }}>
+      <div style={{ display: 'flex', gap: '20px' ,justifyContent:'center'}}>
         <SummaryCard title="Income Total" amount={summary.income_total} color="green" />
         <SummaryCard title="Expense Total" amount={summary.expense_total} color="red" />
         <SummaryCard title="Balance" amount={summary.balance} color="blue" />
